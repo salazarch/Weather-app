@@ -1,17 +1,14 @@
-sitePath: <+pipeline.variables.serviceName>-<+infra.namespace>
+sitePath: /harness-delegate-ng
 
-name: <+pipeline.variables.serviceName>
+name: <+service.name>
 
-replicas: <+pipeline.variables.replicas>
+replicas: 2
 
 image: <+artifact.image>
 imagePolicy: Always
-dockercfg: <+artifact.imagePullSecret>
 
-createNamespace: true
-namespace: <+infra.namespace>
+createNamespace: false
 
-serviceType: <+pipeline.variables.serviceType>
-servicePort: <+pipeline.variables.servicePort>
-serviceTargetPort: <+pipeline.variables.serviceTarget>
+servicePort: 80
+serviceTargetPort: 80
 
