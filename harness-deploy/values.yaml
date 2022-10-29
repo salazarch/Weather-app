@@ -1,5 +1,3 @@
-sitePath: /harness-delegate-ng
-
 name: <+service.name>
 
 replicas: 2
