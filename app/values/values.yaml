@@ -1,0 +1,12 @@
+name: weather-app
+
+replicas: 1
+
+image: izacs/weather-app:SNAPSHOT-latest
+imagePolicy: Always
+
+servicePort: 80
+serviceTargetPort: 80
+
+namespace: weather-app-ns
+createNamespace: true
