@@ -5,4 +5,4 @@ imagePolicy: Always
 createNamespace: true
 servicePort: 80
 serviceTargetPort: 80
-
+namespace: weather-app
