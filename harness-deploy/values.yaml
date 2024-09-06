@@ -1,8 +1,8 @@
-name: <+service.name>
+name: weather-app
 replicas: 1
 image: <+artifact.image>
 imagePolicy: Always
 createNamespace: true
 servicePort: 80
 serviceTargetPort: 80
-namespace: weather-app
+namespace: weather-app-ns
