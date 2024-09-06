@@ -1,6 +1,6 @@
 name: weather-app
 replicas: 1
-image: <+artifact.image>
+image: izacs/weather-app:SNAPSHOT-latest
 imagePolicy: Always
 createNamespace: true
 servicePort: 80
